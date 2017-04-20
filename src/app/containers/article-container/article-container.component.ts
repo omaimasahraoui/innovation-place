@@ -10,14 +10,6 @@ import { AlertService } from '../../services/index';
   styleUrls: ['./article-container.component.css'],
   providers:[ArticleService]
 })
-export class ArticleContainerComponent implements OnInit {
-  public articles:IArticle[]=[];
-  constructor(private articleService:ArticleService){}
-  ngOnInit() {
-    // get users from secure api end point
-   // this.articleService.getAll()
-     // .subscribe(articles => {
-      //  this.articles = articles;
-     // });
-  }
+export class ArticleContainerComponent {
+  
 }

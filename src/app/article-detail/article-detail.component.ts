@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ArticleService} from '../services/article.service';
 import { Router } from '@angular/router';
-//import { AlertService } from '../services/AlertService';
+import { AlertService } from '../services/alert.service';
 
 
 @Component({
@@ -16,7 +16,7 @@ export class ArticleDetailComponent {
   constructor(
     private router: Router,
     private articleService: ArticleService,
-//private alertService: AlertService
+    private alertService: AlertService
 ) { }
 
  
@@ -25,13 +25,14 @@ addArticle(){
     this.articleService.create(this.model)
       .subscribe(
       data => {
-        //this.alertService.success('Article added successfully', true);
+        this.alertService.success('Article added successfully', false);
         this.router.navigate(['/article']);
       },
       error => {
-        //this.alertService.error(error._body);
+        this.alertService.error(error._body);
         this.loading = false;
       });
   }
+  
 
 }
