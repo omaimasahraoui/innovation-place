@@ -1,7 +1,8 @@
 <app-navbar></app-navbar>
-<div class="container"> 
-<div class="col-md-8"><app-article-detail></app-article-detail></div>
-<div class="col-md-4"><app-article-list></app-article-list></div>
-<p><a [routerLink]="['/home']">Retour</a></p>
-
-</div>
+  <div class="row">
+      <app-article-detail></app-article-detail>
+  </div>
+  <div class="row">
+    <app-article-list></app-article-list>
+  </div>
+  <p><a [routerLink]="['/home']">Retour</a></p>
