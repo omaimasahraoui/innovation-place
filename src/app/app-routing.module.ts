@@ -4,14 +4,14 @@ import { LoginComponent } from './ui/login/login.component';
 import { HomeComponent } from './containers/home/home.component';
 import { AuthGuard } from './guards/auth.guards';
 import { RegisterComponent } from './register/register.component';
-import { ArticleContainerComponent } from './containers/article-container/article-container.component';
+import { IdeaStarupComponent } from './containers/idea-starup/idea-starup.component';
 
 const routes: Routes = [
   {
     path: 'login', component: LoginComponent
   },
   { path: '', component: HomeComponent, canActivate: [AuthGuard] },
-  { path: 'article', component: ArticleContainerComponent, canActivate: [AuthGuard] },
+  { path: 'idea-startup', component: IdeaStarupComponent, canActivate: [AuthGuard] },
   { path: 'register', component: RegisterComponent },
   { path: '**', redirectTo: '' }
 ];

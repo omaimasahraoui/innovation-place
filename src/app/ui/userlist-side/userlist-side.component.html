@@ -1,0 +1,8 @@
+<div class="container avatar-sidebar">
+  <h3 >Utilsateurs</h3>
+  <div class="row line" *ngFor="let user of users; let i=index">
+      <img [src]="user.avatar_url" class="avatar thumbnail" />
+      <span class="username">{{user.firstName}} {{user.lastName}}</span>
+      <span class="divider"></span>
+  </div>
+</div>

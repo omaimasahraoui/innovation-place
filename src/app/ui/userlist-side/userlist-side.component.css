@@ -1,0 +1,21 @@
+.avatar {
+  width: 50px;
+  height: 50px;
+  float: left;
+  padding:5px;
+}
+
+.avatar-sidebar{
+     padding: 10px;
+    background: #fff;
+}
+.username {
+  margin: 5px;
+  float: left;
+  padding:2px;
+}
+
+.line{
+     background-color: #fafcfd;
+    color: #5b9bd1;
+}

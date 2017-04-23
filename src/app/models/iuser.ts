@@ -4,4 +4,6 @@ export class IUser {
     password: string;
     firstName: string;
     lastName: string;
+    usertype:string;
+    useravatar:string;
 }

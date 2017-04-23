@@ -12,6 +12,10 @@ export class RegisterComponent {
 
   model: any = {};
   loading = false;
+   usertypes: IUserTypes[] = [
+    { display: 'Personne' },
+    { display: 'Entreprise' },
+  ];
 
   constructor(
     private router: Router,
@@ -32,4 +36,8 @@ export class RegisterComponent {
       });
   }
 
+}
+
+interface IUserTypes{
+  display:string
 }

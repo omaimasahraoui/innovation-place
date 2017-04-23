@@ -29,6 +29,8 @@ import { ArticleContainerComponent } from './containers/article-container/articl
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
 import { ArticleListComponent } from './article-list/article-list.component';
 import {CKEditorModule} from 'ng2-ckeditor';
+import { UserlistSideComponent } from './ui/userlist-side/userlist-side.component';
+import { IdeaStarupComponent } from './containers/idea-starup/idea-starup.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import {CKEditorModule} from 'ng2-ckeditor';
     AlertComponent,
     ArticleContainerComponent,
     ArticleDetailComponent,
-    ArticleListComponent
+    ArticleListComponent,
+    UserlistSideComponent,
+    IdeaStarupComponent
   ],
   imports: [
     BrowserModule,
